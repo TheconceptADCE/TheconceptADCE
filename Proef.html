@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,42 +10,63 @@
         body {
             background-image: url('greenbackground.png');
             background-size: cover;
+            margin: 0;
+            color: white;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .image1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        .lowerLink {
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            text-decoration: none;
+            color: white;
+            display: block;
+            margin: 10px 0;
+        }
+
+        .welcome-text {
+            text-align: center;
+            color: white;
         }
     </style>
     <link rel="icon" href="smile.jpg" type="image/jpeg">
-
-    <style>
-        .image1 {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
-        }
-    </style>
-    <style>
-        .lowerLink {
-            position: absolute;
-            top: 200px; 
-            left: 50%;
-            transform: translateX(-50%); 
-        }
-    </style>
 </head>
 
 <body>
-    <img class="image1" src="dothegreenthing.png" alt="Logo_Dothegreenthing">
+    <div class="container">
+        <a href="Proef.html" class="lowerLink">Home</a>
+        <a href="Over_ons.html" class="lowerLink">Over ons</a>
+        <a href="Proef2.html" class="lowerLink">Opdrachten</a>
 
-    <a href="Proef.html" class="lowerLink">Home</a>
-    <a href="Over_ons.html">Over ons</a>
-    <a href="Proef2.html">Opdrachten</a>
+        <img class="image1" src="dothegreenthing.png" alt="Logo_Dothegreenthing">
 
-    <center><h1>Conept&Creatie video</h1></center>
+        <h1 class="welcome-text">Welkom</h1>
+    </div>
+
+    <center>
+        <h1>Conept&Creatie video</h1>
+    </center>
 
     <p>Informatie over het bedrijf Do the green thing</p>
     <p>Tekst over het proces en wat er te vinden is op de website</p>
-    
+
     <a href="">
         <img src="" alt="">
     </a>
 </body>
+
 </html>
