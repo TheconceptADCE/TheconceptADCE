@@ -18,12 +18,12 @@
         .container {
             position: relative;
             text-align: center;
-            margin-top: 50px; /* Voeg een bovenmarge toe om de inhoud lager op de pagina te plaatsen */
+            margin-top: 50px;
         }
 
         .image1 {
             position: absolute;
-            top: 50%; 
+            top: 0;
             left: 50%;
             transform: translate(-50%, 0);
             z-index: 1;
@@ -32,20 +32,33 @@
         .lowerLink {
             text-decoration: none;
             color: white;
-            display: inline-block; 
+            display: inline-block;
             margin: 0 10px;
-            Top: 40%;
+            top: 40%;
+        }
+
+        #webshopLink {
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            margin: 10px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 2;
         }
     </style>
     <link rel="icon" href="smile.jpg" type="image/jpeg">
 </head>
 
 <body>
+    <a href="Webshop.html" id="webshopLink" class="lowerLink">Webshop</a>
+
     <div class="container">
+        <img class="image1" src="dothegreenthing.png" alt="Logo_Dothegreenthing">
         <a href="Proef.html" class="lowerLink">Home</a>
         <a href="Over_ons.html" class="lowerLink">Over ons</a>
         <a href="Proef2.html" class="lowerLink">Opdrachten</a>
-        <img class="image1" src="dothegreenthing.png" alt="Logo_Dothegreenthing">
     </div>
 
     <h1>Conept&Creatie video</h1>
