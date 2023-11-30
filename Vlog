@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vlog - Mijn Vlogpagina</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ff6600;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #ff9933;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 10px;
+        }
+
+        section {
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #ff6600;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welkom op Mijn Vlogpagina</h1>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="Over_ons.html">Over Ons</a>
+        <a href="Contact.html">Contact</a>
+        <a href="Vlog.html">Vlog</a>
+        <a href="Achter_de_schermen.html">Achter de Schermen</a>
+        <a href="Bloopers.html">Bloopers</a>
+        <a href="whitepaper.html">Whitepaper</a>
+    </nav>
+
+    <section>
+        <h2>Vlogpagina</h2>
+        <p>Dit is de vlogpagina van Mijn Vlogpagina. Hier vind je spannende vlogafleveringen en exclusieve bloopers.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Mijn Vlogpagina. Alle rechten voorbehouden.</p>
+    </footer>
+</body>
+
+</html>
