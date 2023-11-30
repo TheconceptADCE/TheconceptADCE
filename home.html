@@ -4,13 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home - Mijn Webpagina</title>
+    <title>Home - Marketing Experts</title>
 
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
 
         header {
@@ -38,6 +39,20 @@
             padding: 20px;
         }
 
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .services img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px;
+            border-radius: 8px;
+        }
+
         footer {
             background-color: #333;
             color: white;
@@ -49,26 +64,31 @@
 
 <body>
     <header>
-        <h1>Welkom op Mijn Webpagina</h1>
+        <h1>Marketing Experts</h1>
     </header>
 
     <nav>
         <a href="home.html">Home</a>
+        <a href="Diensten.html">Diensten</a>
         <a href="Over_ons.html">Over Ons</a>
         <a href="Contact.html">Contact</a>
-        <a href="Opdrachten.html">Opdrachten</a>
-        <a href="Webshop.html">Webshop</a>
-        <a href="blog.html">Blog</a>
-        <a href="whitepaper.html">Whitepaper</a> 
+        <a href="Blog.html">Blog</a>
     </nav>
 
     <section>
-        <h2>Homepagina</h2>
-        <p>Dit is de homepagina van Mijn Webpagina. Hier vind je allerlei interessante informatie.</p>
+        <h2>Welkom bij Marketing Experts</h2>
+        <p>Wij zijn jouw strategische partner voor resultaatgerichte marketingoplossingen. Met passie en expertise tillen we jouw merk naar nieuwe hoogten.</p>
+
+        <div class="services">
+            <img src="content-marketing.jpg" alt="Content Marketing">
+            <img src="social-media-strategy.jpg" alt="Social Media Strategy">
+            <img src="seo-optimization.jpg" alt="SEO Optimization">
+            <img src="analytics-report.jpg" alt="Analytics Report">
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2023 Mijn Webpagina. Alle rechten voorbehouden.</p>
+        <p>&copy; 2023 Marketing Experts. Alle rechten voorbehouden.</p>
     </footer>
 </body>
 
