@@ -83,41 +83,6 @@
         <a href="Contact.html">Contact</a>
     </nav>
 
-    <section>
-        <h2>Contactgegevens</h2>
-        <p>Heb je vragen of opmerkingen? Neem gerust contact met ons op!</p>
-
-        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-            <label> for="name"Naam:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Bericht:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Verstuur</button>
-        </form>
-
-        <?php
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $name = $_POST["name"];
-            $email = $_POST["email"];
-            $message = $_POST["message"];
-
-            $to = "Danimeima2004@gmail.com";
-            $subject = "Nieuw bericht van $name";
-            $headers = "From: $email";
-
-            $headers .= "Content-Type: text/html; charset=UTF-8";
-
-            mail($to, $subject, $message, $headers);
-
-            echo "Bedankt voor je bericht! We nemen zo snel mogelijk contact met je op.";
-        }
-        ?>
-    </section>
 
     <footer>
         <p>&copy; 2023 Mijn Webpagina. Alle rechten voorbehouden.</p>
