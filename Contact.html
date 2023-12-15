@@ -44,6 +44,27 @@
             text-align: center;
             padding: 1em;
         }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -53,7 +74,7 @@
     </header>
 
     <nav>
-       <a href="home.html">Home</a>
+        <a href="home.html">Home</a>
         <a href="blog.html">Blog</a>
         <a href="whitepaper.html">Whitepaper</a>
         <a href="Vlog.html">Vlog</a>
@@ -65,31 +86,37 @@
     <section>
         <h2>Contactgegevens</h2>
         <p>Heb je vragen of opmerkingen? Neem gerust contact met ons op!</p>
-        
-        <p>E-mail: Danimeima2004@gmail.com</p>
-        <p>Telefoon: +31 06 40 77 80 11</p>
 
-    
-        <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST["name"];
-    $email = $_POST["email"];
-    $message = $_POST["message"];
-    
-    $to = "Danimeima2004@gmail.com";
-    $subject = "Nieuw bericht van $name";
-    $headers = "From: $email";
+        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+            <label for="name">Naam:</label>
+            <input type="text" id="name" name="name" required>
 
-    $headers .= "Content-Type: text/html; charset=UTF-8";
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
 
-    mail($to, $subject, $message, $headers);
+            <label for="message">Bericht:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
 
-  
-    echo "Bedankt voor je bericht! We nemen zo snel mogelijk contact met je op.";
-}
-?>
-
+            <button type="submit">Verstuur</button>
         </form>
+
+        <?php
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $name = $_POST["name"];
+            $email = $_POST["email"];
+            $message = $_POST["message"];
+
+            $to = "Danimeima2004@gmail.com";
+            $subject = "Nieuw bericht van $name";
+            $headers = "From: $email";
+
+            $headers .= "Content-Type: text/html; charset=UTF-8";
+
+            mail($to, $subject, $message, $headers);
+
+            echo "Bedankt voor je bericht! We nemen zo snel mogelijk contact met je op.";
+        }
+        ?>
     </section>
 
     <footer>
