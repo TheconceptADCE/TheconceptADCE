@@ -11,6 +11,8 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            line-height: 1.6;
+            color: #333;
         }
 
         header {
@@ -36,6 +38,8 @@
         section {
             text-align: center;
             padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
         }
 
         footer {
@@ -46,13 +50,17 @@
         }
 
         form {
-            max-width: 600px;
-            margin: 0 auto;
+            max-width: 100%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         input,
         textarea {
-            width: 100%;
+            width: calc(100% - 16px);
             padding: 8px;
             margin: 8px 0;
             box-sizing: border-box;
@@ -83,6 +91,20 @@
         <a href="Contact.html">Contact</a>
     </nav>
 
+    <section>
+        <h2>Contactgegevens</h2>
+        <p>Heb je vragen of opmerkingen? Neem gerust contact met ons op!</p>
+
+        <p>Telefoonnummer: 06 40778011</p>
+        <p>E-mail: <a href="mailto:Danimeima2004@gmail.com">Danimeima2004@gmail.com</a></p>
+
+        <form>
+            <input type="text" placeholder="Naam" required>
+            <input type="email" placeholder="E-mailadres" required>
+            <textarea placeholder="Bericht" rows="4" required></textarea>
+            <button type="submit">Verstuur</button>
+        </form>
+    </section>
 
     <footer>
         <p>&copy; 2023 Mijn Webpagina. Alle rechten voorbehouden.</p>
