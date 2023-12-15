@@ -4,24 +4,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Vlog - Mijn Vlogpagina</title>
+    <title>Vlog - Marketing Meima</title>
 
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
 
         header {
-            background-color: #ff6600;
+            background-color: #333;
             color: white;
             text-align: center;
             padding: 1em;
         }
 
         nav {
-            background-color: #ff9933;
+            background-color: #444;
             color: white;
             text-align: center;
             padding: 10px;
@@ -38,8 +40,20 @@
             padding: 20px;
         }
 
+        .video-container {
+            position: relative;
+            overflow: hidden;
+            max-width: 100%;
+            margin: 20px 0;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 100%;
+        }
+
         footer {
-            background-color: #ff6600;
+            background-color: #333;
             color: white;
             text-align: center;
             padding: 1em;
@@ -49,11 +63,11 @@
 
 <body>
     <header>
-        <h1>Welkom op Mijn Vlogpagina</h1>
+        <h1>Welkom op de Vlogpagina van Marketing Meima</h1>
     </header>
 
     <nav>
-        <a href="home.html">Home</a>
+        <a href="index.html">Home</a>
         <a href="Over_ons.html">Over Ons</a>
         <a href="Contact.html">Contact</a>
         <a href="Vlog.html">Vlog</a>
@@ -64,11 +78,16 @@
 
     <section>
         <h2>Vlogpagina</h2>
-        <p>Dit is de vlogpagina van Mijn Vlogpagina. Hier vind je spannende vlogafleveringen en exclusieve bloopers.</p>
+        <p>Dit is de vlogpagina van Marketing Meima. Hier vind je spannende vlogafleveringen en exclusieve bloopers.</p>
+
+        <div class="video-container">
+            <!-- Vervang 'VIDEO_ID' door de daadwerkelijke ID van je YouTube-video -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2023 Mijn Vlogpagina. Alle rechten voorbehouden.</p>
+        <p>&copy; 2023 Marketing Meima. Alle rechten voorbehouden.</p>
     </footer>
 </body>
 
